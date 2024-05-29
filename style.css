@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #000000;
+}
+.header img,
+.f-logo img{
+    width: 132px;
+}
+.header a,
+.header span {
+    padding: 28px 17px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+.header a:hover,
+.depth a:hover,
+.f-list a:hover {
+    color: #1ed760;
+}
+
+/* main */
+.main {
+    position: relative;
+    height: 969px;
+    background-color: rgb(41, 65, 171);
+    background-image: url(img/background.svg);
+    background-size: 175%;
+    background-position: 46% 4%;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+}
+
+.tit-box {
+    position: relative;
+    height: 370px;
+}
+.tit-box p {
+    position: absolute;
+    font-size: 146px;
+    line-height: 166px;
+    color: #1ed760;
+    font-weight: 900;
+    margin: 0;
+    padding: 20px;
+    line-height: 166px;
+}
+.tit-box p:first-child {
+    top: 0;
+    left: 0;
+}
+.tit-box p:last-child {
+    bottom: 0;
+    right: 0;
+}
+.txt {
+    margin: 30px 0;
+    color: #1ed760;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+.txt+button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 14px 32px;
+    border: 0;
+    border-radius: 25px;
+    background-color: #1ed760;
+    color: #2941ab;
+    font-size: 16px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+/* footer */
+.footer {
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+.f-top {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+.left {
+    display: flex;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.navi {
+    display: flex;
+}
+.navi p {
+    margin: 0;
+}
+.navi a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    color: #919496;
+    font-weight: 900;
+}
+.navi .depth {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.last {
+    margin-top: 20px;
+}
+.depth a {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.right {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+}
+.right a {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #222322;
+    justify-content: center;
+    align-items: center;
+}
+.right img {
+    width: 24px;
+}
+.f-bot {
+    display: flex;
+    flex-direction: column;
+    color: #919496;
+}
+.f-bot > p {
+    text-align: right;
+    margin-right: 270px;
+}
+.f-bot a {
+    color: #919496;
+}
+
+.f-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.f-list div {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+}
